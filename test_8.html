@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>functions</title>
+</head>
+<body>
+    <center>
+        
+        <h1>(HOF)=> A function which is accepting another function as an argument is known as higher order function</h1>
+    
+        <h1>(CBF)=> A function which is passing as a argument to another function is called as callback function.</h1>
+    </center>
+</body>
+<script>
+    main();
+    function main()
+    {
+        let res=calc(10,20,sum);
+        console.log(res);
+    }
+    function calc(n1,n2,type)
+    {
+        let res=type(n1,n2);
+        return res;
+    }
+    function sum(a,b)
+    {
+        return a+b;
+    }
+    function mul(a,b)
+    {
+        return a*b;
+    }
+</script>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>parameters</title>
+</head>
+<body>
+    <center>
+        <h1> funtion with parameters </h1>
+    </center>
+    <script>
+        main();
+        function main()
+        {
+           let a=10;
+           let b=m1(a);
+           console.log(a,b);
+        }
+        function m1(a)
+        {
+            a=a*10;
+            console.log(a);
+        }
+    </script>
+    <center>
+        <h1>
+            IN this function first "a" will be assigned to 10.(a=10) <br>
+            and b=m1(a) , here "a" value 10 is passed as an argument to m1 function 
+        </h1>
+        <h1>
+            Here m1 function is called and a=a*10 = 100, and now a is assigned to 100. "a=100" <br>
+            and the value is not returned. Hence, the value of b is "undefined" 
+        </h1>
+    </center>
+</body>
+</html>
